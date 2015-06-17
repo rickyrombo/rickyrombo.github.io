@@ -2,18 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RickyRombo</title>
-    <link>http://rickyrombo.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on RickyRombo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rickyrombo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;div class=&#34;row&#34;&gt;
+    &lt;section class=&#34;col-md-9&#34;&gt;
+        &lt;p&gt;I&#39;m RickyRombo. I make music sometimes. I write lots of code. I also play some Super Smash Bros. - Project Melee.&lt;/p&gt;
+        &lt;p&gt;I discovered electronic music as a side effect of making computer games. One of the game developers in a chatroom posted a link to deadmau5&#39;s 4x4=12 Continuous Mix on YouTube. I gave it a listen and quickly realized I wanted to make music like that.&lt;/p&gt;
+        &lt;p&gt;I might have drifted from deadmau5&#39;s style since then, but I still aim to make music for the listener. Not for the festivals, or raves, or dances, but the coders, the writers, and future artists at their computer. I write music for the people who take long walks or car rides, for those taking the bus, and for those who want to escape reality while they work.&lt;/p&gt;
+        &lt;p&gt;That said, I&#39;ve had a couple performances as part of &lt;a title=&#34;UNL DJ Club Website&#34; href=&#34;http://unldjclub.herokuapp.com&#34;&gt;UNL DJ Club&lt;/a&gt;, and I enjoy a good party.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&#34;col-md-3&#34;&gt;
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/dj.jpg&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Under construction</title>
-      <link>http://rickyrombo.github.io/posts/under-construction/</link>
+      <link>http://localhost:1313/posts/under-construction/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/posts/under-construction/</guid>
+      <guid>http://localhost:1313/posts/under-construction/</guid>
       <description>&lt;h2&gt;Yo this page ain&#39;t workin&#39; yet&lt;/h2&gt;
 </description>
     </item>
