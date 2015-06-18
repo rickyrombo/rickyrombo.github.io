@@ -29,6 +29,42 @@
     </item>
     
     <item>
+      <title>Favorites</title>
+      <link>http://localhost:1313/favorites/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/favorites/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:4f3b329716b222beb2b566d38300f99e&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Followings</title>
+      <link>http://localhost:1313/followings/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/followings/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:ab8a5e644b03c62b7e0b9729b48b550b&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/music/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:80a30196a224b6de08ea1ecb0250d3a5&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Under construction</title>
       <link>http://localhost:1313/posts/under-construction/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
