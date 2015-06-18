@@ -9,30 +9,6 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Music</title>
-      <link>http://localhost:1313/music/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/music/</guid>
-      <description>
-
-&lt;h1 id=&#34;loading:80a30196a224b6de08ea1ecb0250d3a5&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Favorites</title>
-      <link>http://localhost:1313/favorites/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/favorites/</guid>
-      <description>
-
-&lt;h1 id=&#34;loading:4f3b329716b222beb2b566d38300f99e&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
@@ -65,12 +41,49 @@
     </item>
     
     <item>
-      <title>Under construction</title>
-      <link>http://localhost:1313/posts/under-construction/</link>
+      <title>Music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/music/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:80a30196a224b6de08ea1ecb0250d3a5&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Favorites</title>
+      <link>http://localhost:1313/favorites/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/favorites/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:4f3b329716b222beb2b566d38300f99e&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A New Home</title>
+      <link>http://localhost:1313/posts/new-website/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/under-construction/</guid>
-      <description>&lt;h2&gt;Yo this page ain&#39;t workin&#39; yet&lt;/h2&gt;
+      <guid>http://localhost:1313/posts/new-website/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m currently in the process of moving my website from PHP/MySQL with &lt;a href=&#34;http://laravel.com&#34;&gt;Laravel&lt;/a&gt; to a static site using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Pretty soon, &lt;a href=&#34;http://rickyrombo.com&#34;&gt;rickyrombo.com&lt;/a&gt; will point to this GitHub page instead of going to some folder on &lt;a href=&#34;http://awestruckdesign.com&#34;&gt;AwestruckDesign&lt;/a&gt; or website on &lt;a href=&#34;http://heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also been thinking of ways to improve the website. Some things on the list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add play icons on hover&lt;/li&gt;
+&lt;li&gt;Add SoundCloud authentication&lt;/li&gt;
+&lt;li&gt;Add page for free downloads (using the authentication)&lt;/li&gt;
+&lt;li&gt;Add ability to like/share sounds&lt;/li&gt;
+&lt;li&gt;Start making a music blog/distribution platform for handpicked songs&lt;/li&gt;
+&lt;li&gt;Infinite scrolling (favorites has it already, now for &amp;ldquo;Followings&amp;rdquo;!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As you can see, there&amp;rsquo;s a lot to do! So far, I&amp;rsquo;m extremely glad I switched to Hugo. I think it will make life much easier, and blogging way better. Bye, CMS systems. Bye, PHP. Hello beautiful Markdown, command line, and Git.&lt;/p&gt;
 </description>
     </item>
     
