@@ -1,3 +1,4 @@
+@import "player.css";
 /*
  * Load Fonts
  */
@@ -32,6 +33,25 @@ section h2, article h2{
 	padding-bottom: 8px;
 	margin-bottom: 16px;
 }
+
+img {
+    max-width: 100%;
+}
+
+header .col {
+    display: table;
+    min-height: 100px;
+}
+
+header .col>div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+h1, h2, h3, .page-tagline {
+    text-transform: lowercase;
+}
+
 /*
  * Page Structure
  */
@@ -67,27 +87,6 @@ section h2, article h2{
 .site-logo {
 	display: inline-block;
 }
-/*
-@media (min-width: 480px) and (min-device-width: 480px) {
-	.header-content {
-		width: calc(100% - 220px);
-		margin: 0 110px 10px 10px;
-		float: left;
-	}
-	.site-logo {
-		float: left;
-	}
-}
-*/
-header .col {
-    display: table;
-    min-height: 100px;
-}
-
-header .col>div {
-    display: table-cell;
-    vertical-align: bottom;
-}
 
 .page-title h1{
 	font-size: 72px;
@@ -120,6 +119,7 @@ header .col>div {
 	color: grey;
 	text-align: center;
     clear: both;
+    margin-bottom: 50px;
 }
 /*
 * If there's a background
@@ -140,10 +140,6 @@ header .col>div {
     width: 100%;
 }
 
-img {
-    max-width: 100%;
-}
-
 .full-art {
     position: relative;
     margin-bottom: 20px;
@@ -158,6 +154,7 @@ img {
     margin: 10px;
     font-size: 21px;
     word-break: break-word;
+    text-transform: none;
 }
 @media(min-width: 420px ){
     .pair > div {
@@ -176,26 +173,6 @@ img {
 .full-art a:hover {
     color: lightblue;
 }
-
-/*
-.widget {
-    border: 0;
-    height: 480px;
-    margin-bottom: 1em;
-    width: 100%;
-}
-@media(max-width: 992px){
-    .widget {
-        height: 360px;
-    }
-}
-
-@media(max-width: 600px){
-    .widget {
-        height: 200px;
-    }
-}
-*/
 .rr-navbar {
     border-radius: 0;
     border: 0;
@@ -245,31 +222,6 @@ img {
     float: right;
 }
 
-.rr-nav-player-controls {
-    width: calc(100% - 500px);
-    float: none;
-}
-.rr-nav-player-controls>li>a:hover {
-    cursor: pointer;
-}
-
-#nowPlaying {
-    width: calc(100% - 90px);
-    height: 50px;
-    float: left;
-}
-#currentSound {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    white-space: nowrap;
-}
-#soundTitle {
-    width: 100%;
-    display: inline-block;
-    text-align: right;
-}
 .rr-nav-social>li {
     white-space: nowrap;
 }
@@ -291,9 +243,6 @@ img {
     }
     .rr-collapseable.rr-expanded {
         height: 180px;
-    }
-    .rr-nav-player-controls{
-        width: calc(100% - 180px);
     }
 }
 .pair {
