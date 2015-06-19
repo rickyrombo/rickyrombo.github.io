@@ -2,30 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rickyrombo</title>
-    <link>http://rickyrombo.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on rickyrombo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 17 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rickyrombo.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>favorites</title>
-      <link>http://rickyrombo.github.io/favorites/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.github.io/favorites/</guid>
-      <description>
-
-&lt;h1 id=&#34;loading:4f3b329716b222beb2b566d38300f99e&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
-</description>
-    </item>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>followings</title>
-      <link>http://rickyrombo.github.io/followings/</link>
+      <link>http://localhost:1313/followings/</link>
       <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/followings/</guid>
+      <guid>http://localhost:1313/followings/</guid>
       <description>
 
 &lt;h1 id=&#34;loading:ab8a5e644b03c62b7e0b9729b48b550b&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
@@ -33,11 +21,35 @@
     </item>
     
     <item>
-      <title>about me</title>
-      <link>http://rickyrombo.github.io/about/</link>
+      <title>favorites</title>
+      <link>http://localhost:1313/favorites/</link>
       <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/about/</guid>
+      <guid>http://localhost:1313/favorites/</guid>
+      <description>
+
+&lt;h1 id=&#34;loading:4f3b329716b222beb2b566d38300f99e&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/music/</guid>
+      <description>&lt;div id=&#34;soundcloud-music&#34;&gt;
+&lt;h1&gt;Loading...&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;div class=&#34;row&#34;&gt;
     &lt;section class=&#34;col-md-9&#34;&gt;
         &lt;p&gt;I&#39;m RickyRombo. I make music sometimes. I write lots of code. I also play some Super Smash Bros. - Project Melee.&lt;/p&gt;
@@ -46,30 +58,18 @@
         &lt;p&gt;That said, I&#39;ve had a couple performances as part of &lt;a title=&#34;UNL DJ Club Website&#34; href=&#34;http://unldjclub.herokuapp.com&#34;&gt;UNL DJ Club&lt;/a&gt;, and I enjoy a good party.&lt;/p&gt;
     &lt;/section&gt;
     &lt;section class=&#34;col-md-3&#34;&gt;
-        &lt;p&gt;&lt;img src=&#34;http://rickyrombo.github.io/img/dj.jpg&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/dj.jpg&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/section&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>music</title>
-      <link>http://rickyrombo.github.io/music/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.github.io/music/</guid>
-      <description>&lt;div id=&#34;soundcloud-music&#34;&gt;
-&lt;h1&gt;Loading...&lt;/h1&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>A New Home</title>
-      <link>http://rickyrombo.github.io/posts/new-website/</link>
+      <link>http://localhost:1313/posts/new-website/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/posts/new-website/</guid>
+      <guid>http://localhost:1313/posts/new-website/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently in the process of moving my website from PHP/MySQL with &lt;a href=&#34;http://laravel.com&#34;&gt;Laravel&lt;/a&gt; to a static site using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Pretty soon, &lt;a href=&#34;http://rickyrombo.com&#34;&gt;rickyrombo.com&lt;/a&gt; will point to this GitHub page instead of going to some folder on &lt;a href=&#34;http://awestruckdesign.com&#34;&gt;AwestruckDesign&lt;/a&gt; or website on &lt;a href=&#34;http://heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve also been thinking of ways to improve the website. Some things on the list:&lt;/p&gt;

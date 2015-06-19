@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on rickyrombo</title>
-    <link>http://rickyrombo.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on rickyrombo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 16 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rickyrombo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A New Home</title>
-      <link>http://rickyrombo.github.io/posts/new-website/</link>
+      <link>http://localhost:1313/posts/new-website/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/posts/new-website/</guid>
+      <guid>http://localhost:1313/posts/new-website/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently in the process of moving my website from PHP/MySQL with &lt;a href=&#34;http://laravel.com&#34;&gt;Laravel&lt;/a&gt; to a static site using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Pretty soon, &lt;a href=&#34;http://rickyrombo.com&#34;&gt;rickyrombo.com&lt;/a&gt; will point to this GitHub page instead of going to some folder on &lt;a href=&#34;http://awestruckdesign.com&#34;&gt;AwestruckDesign&lt;/a&gt; or website on &lt;a href=&#34;http://heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve also been thinking of ways to improve the website. Some things on the list:&lt;/p&gt;
