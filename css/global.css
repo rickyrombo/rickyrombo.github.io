@@ -24,7 +24,6 @@ body {
 	background-color: black;
 	font-size: 10pt;
     color: #DDD;
-    min-width: 240px;
 }
 section, article {
 	padding: 1em 0;
@@ -188,7 +187,6 @@ h1, h2, h3, .page-tagline {
     border-radius: 0;
     border: 0;
     width: 100%;
-    min-width: 240px;
     top: 0;
     left: 0;
     position: fixed;
