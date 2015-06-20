@@ -19,11 +19,18 @@
 
 #player {
     width: 100%;
+    min-width: 240px;
     position: fixed;
     bottom: 0;
     z-index: 500;
     background-color: rgba(24, 24, 24, 0.85);
     border-color:#080808
+}
+
+@media(max-width: 240px){
+    #player {
+        position: absolute;
+    }
 }
 #player>div {
     max-width: 1280px;
