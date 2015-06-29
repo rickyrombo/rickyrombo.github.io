@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>favorites | rickyrombo</title>
+    <title> | </title>
 	<base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
@@ -51,23 +51,29 @@
 				<div class="row">
 					<div class="col col-md-6">
 						<div class="page-title">
-							<h1>favorites</h1>
-						</div>
-					</div>
-					
-					<div class="col col-md-6">
-						<div class="page-tagline">
-							<p>Now that&rsquo;s what I like.</p>
+							<h1></h1>
 						</div>
 					</div>
 					
 				</div>
 			</header>
 			<div id="main">
-
-
-<h1 id="loading:4f3b329716b222beb2b566d38300f99e">Loading&hellip;</h1>
-
+                <section>
+                    <ul>
+                        
+                    </ul>
+                </section>
+<section>
+	<ul>
+		
+		<li>
+	<h3><a title="A New Home" href="/posts/new-website/">A New Home</a></h3>
+	<p><p>I&rsquo;m currently in the process of moving my website from PHP/MySQL with <a href="http://laravel.com">Laravel</a> to a static site using <a href="http://gohugo.io">Hugo</a>. Pretty soon, <a href="http://rickyrombo.com">rickyrombo.com</a> will point to this GitHub page instead of going to some folder on <a href="http://awestruckdesign.com">AwestruckDesign</a> or website on <a href="http://heroku.com">Heroku</a>.</p>
+ <a title="A New Home" href="/posts/new-website/">... Read More</a></p>
+</li>
+		
+	</ul>
+</section>
         </div>
 	    	<footer id="footer" class="footer">
         <p>All cover art and music is provided using <a target="_blank" title="Soundcloud.com" href="http://soundcloud.com">Soundcloud</a>
@@ -76,7 +82,7 @@
     </footer>
     </div>
 </div>
-<div id="player" class="player">
+<div id="player">
     <div class="container-fluid">
         <ul class="player-controls">
             <li><a class="prev-btn" target="_blank"><span class="control glyphicon glyphicon-fast-backward"></span></a></li>
@@ -87,27 +93,25 @@
         <ul class="now-playing">
             <li class="current-sound">
                 <a class="now-playing-title" target="_blank">Loading...</a>
-                <a class="read-post" title="Read my article about this sound" target="_blank"><span class="fa fa-newspaper-o"></span></a>
                 <a class="now-playing-from"></a>
             </li>
             <li class="time"><a class="sound-position" target="_blank">00:00</a></li>
             <li class="timeline">
-                <div class="line-container">
-                    <div class="loadhead"></div>
-                    <div class="playhead"></div>
-                    <div class="line"></div>
-                </div>
+                <div class="line"></div>
+                <div class="playhead"></div>
             </li>
             <li class="time pull-right"><a class="sound-duration" target="_blank">00:00</a></li>
         </ul>
-        <ul class="soundcloud-controls pull-right">
-            <li><a class="like-sound" title="Like this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-heart"></span></a></li>
-            <li><a class="follow-user" title="Follow this user on Soundcloud" target="_blank"><span class="fa fa-user-plus"></span></a></li>
-            <li style="display: none"><a class="download-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></li>
-            <li><a class="buy-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a class="view-sound" title="View this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-share"></span></a></li>
+        <ul class="soundcloud-controls" class="pull-right">
+            <li><a id="likeSound" title="(Coming soon) Like this sound on SoundCloud" target="_blank"><span class="glyphicon glyphicon-heart"></span></a></li>
+            <li><a id="shareSound" title="(Coming soon) Repost this sound on SoundCloud" target="_blank"><span class="glyphicon glyphicon-retweet"></span></a></li>
+            <li><a id="downloadSound" title="(Coming soon) Get this sound" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></li>
+            <li><a id="buySound" title="(Coming soon) Get this sound" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
         </ul>
     </div>
 </div>
 
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>

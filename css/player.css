@@ -1,96 +1,125 @@
-
-#currentSound {
+.player .now-playing {
+    height: 40px;
+    width: calc(100% - 210px);
+}
+.player .current-sound {
+    display: inline-block;
+    width: 200px;
     overflow: hidden;
-    width: 100%;
     height: 100%;
     position: relative;
     white-space: nowrap;
+    padding: 11px 0 0 0;
 }
 
-#nowPlaying {
-    height: 40px;
-    width: calc(100% - 180px);
-}
-#currentSound {
-    display: inline-block;
-    max-width: calc(100% - 428px);
-    overflow: hidden;
-}
-
-#player {
+.player {
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 500;
     background-color: rgba(24, 24, 24, 0.85);
+    background-color: #181818;
     border-color:#080808
 }
 
-#player>div {
+.player>div {
     max-width: 1280px;
 }
-#player ul {
+.player ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
     float: left;
     overflow: hidden;
 }
-#player li {
+.player li {
     display: inline-block;
     float: left;
     margin: 0 8px;
 }
-#player a{
+.player li > a{
     padding: 15px 0;
-    color: #999;
     line-height: 20px;
+}
+.player a {
+    color: #999;
     display: block;
 }
-#player a:hover {
+.player a:hover {
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
-#soundcloud-controls a:hover, #soundcloud-controls a {
+.soundcloud-controls a.disabled:hover, .soundcloud-controls a.disabled {
     cursor: auto;
     color: #333;
 }
-#player .time {
+.player a.read-post {
+    float: left;
+    margin-right: 5px;
+}
+
+.soundcloud-controls a.enabled {
+    color: #999;
+}
+
+.soundcloud-controls a.on {
+    color: #DF5C00;
+}
+
+.player .time {
     min-width: 32px;
     max-width: 40px;
     text-align: right;
 }
-#player .time a:hover{
+.player .time a:hover{
     cursor: auto;
     color: #999;
 }
-#timePos {
-    position: relative;
-    width: 284px;
-    height: 100%;
-    cursor: pointer;
-}
 @media (max-width: 768px) {
-    #player #timePos, #player .time {
+    .player .timeline, .player .time {
         display: none;
     }
-    #player #currentSound {
+    .player .current-sound {
         max-width: 100%;
     }
 }
-#timeLine {
-    height: 1px;
-    background-color: #999;
+.timeline {
     position: relative;
-    top: 24px;
+    width: calc(100% - 330px);
+    height: 50px;
+    cursor: pointer;
+    background-color: #181818;
 }
-#curPos {
-    height: 20px;
-    width: 6px;
-    background-color: #BBB;
+.timeline .line {
+    -webkit-mask-size: 100% 100%;
+    background-color: #181818;
+    height: 100%;
+    width: 100%;
+}
+.timeline .line-container {
     position: relative;
-    top: -10px;
-    left: -3px;
+    height: 32px;
+    margin-top: -16px;
+    top: 50%;
     pointer-events: none;
+    background-color: rgba(153, 153, 153, 0.1);
+}
+.playhead, .loadhead {
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    pointer-events: none;
+}
+.loadhead {
+    background-color: #555;
+}
+
+.player .now-playing .current-sound a {
+    line-height: 1.2;
+    padding: 0;
+}
+.player .now-playing-from {
+    color: #777;
+    font-size: x-small;
 }
