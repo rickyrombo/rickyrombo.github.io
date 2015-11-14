@@ -37,8 +37,8 @@ define(['jquery', 'soundcloud_sdk'], function($) {
             }
             $collage.appendTo('body');
         });
-    })
+    });
     $(window).on('load', function(){
         $('.collage-container').fadeIn(1000);  
-    })
+    });
 })
