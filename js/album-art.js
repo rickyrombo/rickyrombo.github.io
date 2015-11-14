@@ -36,9 +36,7 @@ define(['jquery', 'soundcloud_sdk'], function($) {
                 $collage.addImages(sounds);
             }
             $collage.appendTo('body');
+            $('.collage-container').fadeIn(1000);  
         });
-    });
-    $(window).on('load', function(){
-        $('.collage-container').fadeIn(1000);  
     });
 })
