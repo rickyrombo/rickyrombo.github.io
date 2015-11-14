@@ -41,5 +41,4 @@ define(['jquery', 'soundcloud_sdk'], function($) {
     $(window).on('load', function(){
         $('.collage-container').fadeIn(1000);  
     })
-    }
 })
