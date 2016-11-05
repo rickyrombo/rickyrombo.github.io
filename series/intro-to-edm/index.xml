@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rickyrombo</title>
-    <link>http://rickyrombo.com/</link>
-    <description>Recent content on rickyrombo</description>
+    <title>Intro To Edm on rickyrombo</title>
+    <link>http://rickyrombo.com/series/intro-to-edm/</link>
+    <description>Recent content in Intro To Edm on rickyrombo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 12 Jun 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rickyrombo.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rickyrombo.com/series/intro-to-edm/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>An Introduction to Electronic Dance Music</title>
@@ -40,102 +40,6 @@
 
 &lt;p&gt;We&amp;rsquo;ll start our exploration with house music. That will cover most everything you&amp;rsquo;ll hear on the radio and in clubs.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>about me</title>
-      <link>http://rickyrombo.com/about/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/about/</guid>
-      <description>&lt;div class=&#34;row&#34;&gt;
-    &lt;section class=&#34;col-md-9&#34;&gt;
-        &lt;p&gt;I&#39;m RickyRombo. I make music sometimes. I write lots of code. I also play some Super Smash Bros. - Project Melee.&lt;/p&gt;
-        &lt;p&gt;I discovered electronic music as a side effect of making computer games. One of the game developers in a chatroom posted a link to deadmau5&#39;s 4x4=12 Continuous Mix on YouTube. I gave it a listen and quickly realized I wanted to make music like that.&lt;/p&gt;
-        &lt;p&gt;I might have drifted from deadmau5&#39;s style since then, but I still aim to make music for the listener. Not for the festivals, or raves, or dances, but the coders, the writers, and future artists at their computer. I write music for the people who take long walks or car rides, for those taking the bus, and for those who want to escape reality while they work.&lt;/p&gt;
-        &lt;p&gt;That said, I&#39;ve had a couple performances as part of &lt;a title=&#34;UNL DJ Club Website&#34; href=&#34;http://unldjclub.herokuapp.com&#34;&gt;UNL DJ Club&lt;/a&gt;, and I enjoy a good party.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section class=&#34;col-md-3&#34;&gt;
-        &lt;p&gt;&lt;img src=&#34;http://rickyrombo.com/img/dj.jpg&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>favorites</title>
-      <link>http://rickyrombo.com/favorites/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/favorites/</guid>
-      <description>
-
-&lt;h1 id=&#34;loading&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>followings</title>
-      <link>http://rickyrombo.com/followings/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/followings/</guid>
-      <description>
-
-&lt;h1 id=&#34;loading&#34;&gt;Loading&amp;hellip;&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>http://rickyrombo.com/music/</link>
-      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/music/</guid>
-      <description>&lt;div id=&#34;soundcloud-music&#34;&gt;
-&lt;h1&gt;Loading...&lt;/h1&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A New Home</title>
-      <link>http://rickyrombo.com/posts/new-website/</link>
-      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/posts/new-website/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m currently in the process of moving my website from PHP/MySQL with &lt;a href=&#34;http://laravel.com&#34;&gt;Laravel&lt;/a&gt; to a static site using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Pretty soon, &lt;a href=&#34;http://rickyrombo.com&#34;&gt;rickyrombo.com&lt;/a&gt; will point to this GitHub page instead of going to some folder on &lt;a href=&#34;http://awestruckdesign.com&#34;&gt;AwestruckDesign&lt;/a&gt; or website on &lt;a href=&#34;http://heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also been thinking of ways to improve the website. Some things on the list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Add play icons on hover&lt;/li&gt;
-&lt;li&gt;Add SoundCloud authentication&lt;/li&gt;
-&lt;li&gt;Add page for free downloads (using the authentication)&lt;/li&gt;
-&lt;li&gt;Add ability to like/share sounds&lt;/li&gt;
-&lt;li&gt;Start making a music blog/distribution platform for handpicked songs&lt;/li&gt;
-&lt;li&gt;Infinite scrolling (favorites has it already, now for &amp;ldquo;Followings&amp;rdquo;!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As you can see, there&amp;rsquo;s a lot to do! So far, I&amp;rsquo;m extremely glad I switched to Hugo. I think it will make life much easier, and blogging way better. Bye, CMS systems. Bye, PHP. Hello beautiful Markdown, command line, and Git.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://rickyrombo.com/callback/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rickyrombo.com/callback/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34;&gt;
-    &lt;title&gt;Connect with SoundCloud&lt;/title&gt;
-&lt;/head&gt;
-&lt;body onload=&#34;window.opener.setTimeout(window.opener.SC.connectCallback, 1)&#34;&gt;
-&lt;b style=&#34;width: 100%; text-align: center;&#34;&gt;This popup should automatically close in a few seconds&lt;/b&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
     </item>
     
   </channel>

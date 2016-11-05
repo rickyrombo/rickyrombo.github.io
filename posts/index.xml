@@ -2,18 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on rickyrombo</title>
-    <link>http://rickyrombo.github.io/posts/</link>
+    <link>http://rickyrombo.com/posts/</link>
     <description>Recent content in Posts on rickyrombo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://rickyrombo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://rickyrombo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Introduction to Electronic Dance Music</title>
+      <link>http://rickyrombo.com/posts/intro-to-edm/main/</link>
+      <pubDate>Sun, 12 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://rickyrombo.com/posts/intro-to-edm/main/</guid>
+      <description>
+
+&lt;p&gt;So you&amp;rsquo;ve heard your friends talking about EDM, or electronic dance music. Maybe they were going to a music festival like Coachella or Ultra. Maybe they DJ or produce some music. But your friends have shown you different music, and you&amp;rsquo;re confused. What is EDM? Those songs don&amp;rsquo;t sound the same.&lt;/p&gt;
+
+&lt;p&gt;Or maybe you&amp;rsquo;re on the opposite side of the spectrum. Perhaps everything &lt;em&gt;does&lt;/em&gt; sound the same. One friend says &amp;ldquo;I like dubstep,&amp;rdquo; and your other friend says &amp;ldquo;I like tropical house.&amp;rdquo; And you&amp;rsquo;re stuck thinking, &amp;ldquo;What&amp;rsquo;s the difference?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Or maybe you&amp;rsquo;re somewhere in the middle, and you know and appreciate the different subgenres of EDM. Maybe you&amp;rsquo;re here because you want to &lt;a href=&#34;https://www.youtube.com/watch?v=5l-PjIqPOBw&#34;&gt;go one deeper&lt;/a&gt; on each subgenre and really understand the what makes them unique. Or maybe you just want to hear what I think are the different genres and criticize my examples. Got a better example? Reach out to me.&lt;/p&gt;
+
+&lt;p&gt;In any case, you&amp;rsquo;re here. Welcome to the series. I&amp;rsquo;ll walk you through an analysis of a few major genres as of 2016, and include some favorite examples of mine throughout.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-do-you-tell-what-genre-songs-are&#34;&gt;How do you tell what genre songs are?&lt;/h1&gt;
+
+&lt;p&gt;Subgenres in EDM are primarily distinguishable from BPM (beats per minute) and drum pattern. Since everything is made electronically (at least mostly electronically) it&amp;rsquo;s easy to establish a rigid BPM. And since it&amp;rsquo;s made for dancing, having most of the dance music at the same speed helps DJs mix from one track to the next. Also, the BPM of a song and the drum pattern are the key factors in determining the energy and the style of dance, which are two of the main factors in what makes a genre in any form of music. Artists and different music providers will generally tell you what genre a song is, but most of the time EDM is listed as &amp;ldquo;Electronic.&amp;rdquo;&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-a-drop&#34;&gt;What is a &amp;ldquo;drop?&amp;rdquo;&lt;/h1&gt;
+
+&lt;p&gt;A &amp;ldquo;drop&amp;rdquo; is the part of the song that follows the end of the main build. The meaning is fairly ambiguous. The best analogy would be an amusement ride such as a drop tower or roller coaster. Just as the cart climbs to the top, the song builds to the climax of suspense. Immediately following is the &amp;ldquo;drop&amp;rdquo; - your stomach drops on the roller coaster, your feet leave the floor on the dance floor. The reason it&amp;rsquo;s ambiguous is that some people view the last measure of the build as the drop - think of it as the pause in the roller coaster as you hang over the edge of the first hill. Others view the whole energetic phrase as the drop (like me), which would correspond to the entire ride down the first hill in a roller coaster as opposed to the transition from climbing to falling. All in all, it&amp;rsquo;s around the transition of the song from building to a high energy phrase.&lt;/p&gt;
+
+&lt;h1 id=&#34;do-all-edm-songs-have-a-drop&#34;&gt;Do all EDM songs have a drop?&lt;/h1&gt;
+
+&lt;p&gt;Not exactly, no. But technically the concept is still there even if a song doesn&amp;rsquo;t have a &amp;ldquo;drop&amp;rdquo;-like chorus or even if a song isn&amp;rsquo;t EDM. A song may not have a drop if its build (if any) isn&amp;rsquo;t substantially different from its chorus phrase in terms of energy. For instance, it would be weird to say that tropical house has a &amp;ldquo;drop&amp;rdquo; because the change of energy isn&amp;rsquo;t quite as drastic as other genres, although theoretically you could. A &amp;ldquo;drop&amp;rdquo; is a moment of hype - if you wouldn&amp;rsquo;t find yourself waiting in anticipation to jump up and down on the dance floor you&amp;rsquo;re pretty safe not calling it a &amp;ldquo;drop.&amp;rdquo; However, if someone else calls it a drop, don&amp;rsquo;t be that guy that tries to correct them. &lt;a href=&#34;http://theoatmeal.com/comics/irony&#34;&gt;It&amp;rsquo;s actually a lot like irony&lt;/a&gt;. It&amp;rsquo;s not something worth debating - you will know what part of the song is the &amp;ldquo;drop&amp;rdquo; even if it&amp;rsquo;s weird or feels wrong to call it that.&lt;/p&gt;
+
+&lt;h1 id=&#34;let-s-get-started&#34;&gt;Let&amp;rsquo;s get started&lt;/h1&gt;
+
+&lt;p&gt;We&amp;rsquo;ll start our exploration with house music. That will cover most everything you&amp;rsquo;ll hear on the radio and in clubs.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A New Home</title>
-      <link>http://rickyrombo.github.io/posts/new-website/</link>
+      <link>http://rickyrombo.com/posts/new-website/</link>
       <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://rickyrombo.github.io/posts/new-website/</guid>
+      <guid>http://rickyrombo.com/posts/new-website/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently in the process of moving my website from PHP/MySQL with &lt;a href=&#34;http://laravel.com&#34;&gt;Laravel&lt;/a&gt; to a static site using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Pretty soon, &lt;a href=&#34;http://rickyrombo.com&#34;&gt;rickyrombo.com&lt;/a&gt; will point to this GitHub page instead of going to some folder on &lt;a href=&#34;http://awestruckdesign.com&#34;&gt;AwestruckDesign&lt;/a&gt; or website on &lt;a href=&#34;http://heroku.com&#34;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve also been thinking of ways to improve the website. Some things on the list:&lt;/p&gt;

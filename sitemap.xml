@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://rickyrombo.github.io/</loc>
-    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>http://rickyrombo.com/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rickyrombo.github.io/about/</loc>
-    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
+    <loc>http://rickyrombo.com/posts/intro-to-edm/main/</loc>
+    <lastmod>2016-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rickyrombo.github.io/followings/</loc>
-    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rickyrombo.github.io/music/</loc>
+    <loc>http://rickyrombo.com/about/</loc>
     <lastmod>2015-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rickyrombo.github.io/favorites/</loc>
+    <loc>http://rickyrombo.com/favorites/</loc>
     <lastmod>2015-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rickyrombo.github.io/posts/new-website/</loc>
+    <loc>http://rickyrombo.com/followings/</loc>
+    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/music/</loc>
+    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/posts/new-website/</loc>
     <lastmod>2015-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rickyrombo.github.io/callback/</loc>
+    <loc>http://rickyrombo.com/callback/</loc>
   </url>
   
 </urlset>
