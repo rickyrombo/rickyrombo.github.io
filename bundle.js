@@ -34682,8 +34682,8 @@
 	        var _this = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
 
 	        _this.state = {
-	            content: '',
-	            title: 'Loading',
+	            content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
+	            title: 'Page not found',
 	            series: []
 	        };
 	        return _this;
@@ -35073,15 +35073,6 @@
 	                                'a',
 	                                { href: '#/favorites' },
 	                                'favorites'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '#/followings' },
-	                                'followings'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
