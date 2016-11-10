@@ -24078,6 +24078,10 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _soundcloudInit = __webpack_require__(197);
+
+	var _soundcloudInit2 = _interopRequireDefault(_soundcloudInit);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24089,13 +24093,43 @@
 	var PlayerSocialButtons = function (_React$Component) {
 	    _inherits(PlayerSocialButtons, _React$Component);
 
-	    function PlayerSocialButtons() {
+	    function PlayerSocialButtons(props) {
 	        _classCallCheck(this, PlayerSocialButtons);
 
-	        return _possibleConstructorReturn(this, (PlayerSocialButtons.__proto__ || Object.getPrototypeOf(PlayerSocialButtons)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (PlayerSocialButtons.__proto__ || Object.getPrototypeOf(PlayerSocialButtons)).call(this, props));
+
+	        _this.onLikeClicked = _this.onLikeClicked.bind(_this);
+	        _this.onFollowClicked = _this.onFollowClicked.bind(_this);
+	        return _this;
 	    }
 
 	    _createClass(PlayerSocialButtons, [{
+	        key: 'onLikeClicked',
+	        value: function onLikeClicked() {
+	            var _this2 = this;
+
+	            _soundcloudInit2.default.connect().then(function () {
+	                return _soundcloudInit2.default.put('/me/likes/' + _this2.props.sound.id);
+	            }).then(function (sound) {
+	                alert('You now like ' + sound.title);
+	            }).catch(function (error) {
+	                alert('Error: ' + error.message);
+	            });
+	        }
+	    }, {
+	        key: 'onFollowClicked',
+	        value: function onFollowClicked() {
+	            var _this3 = this;
+
+	            _soundcloudInit2.default.connect().then(function () {
+	                return _soundcloudInit2.default.put('/me/followings/' + _this3.props.sound.user.id);
+	            }).then(function (user) {
+	                alert('You are now following ' + user.username);
+	            }).catch(function (error) {
+	                alert('Error: ' + error.message);
+	            });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -24106,7 +24140,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { title: 'Like this sound on Soundcloud', target: '_blank' },
+	                        { onClick: this.onLikeClicked, title: 'Like this sound on Soundcloud', target: '_blank' },
 	                        _react2.default.createElement('span', { className: 'glyphicon glyphicon-heart' })
 	                    )
 	                ),
@@ -24115,7 +24149,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: this.props.sound.user.permalink_url, title: 'Follow this user on Soundcloud', target: '_blank' },
+	                        { onClick: this.onFollowClicked, title: 'Follow this user on Soundcloud', target: '_blank' },
 	                        _react2.default.createElement('span', { className: 'fa fa-user-plus' })
 	                    )
 	                ),
@@ -24124,7 +24158,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: this.props.sound.download_url ? this.props.sound.download_url : this.props.sound.buy_url, title: 'Get this sound', target: '_blank' },
+	                        { href: this.props.sound.download_url ? this.props.sound.download_url : this.props.sound.purchase_url, title: 'Get this sound', target: '_blank' },
 	                        _react2.default.createElement('span', { className: "glyphicon " + (this.props.sound.download_url ? "glyphicon-circle-arrow-down" : "glyphicon-shopping-cart") })
 	                    )
 	                ),
