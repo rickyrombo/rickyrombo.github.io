@@ -24136,6 +24136,10 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            if (this.props.sound.id != this.cachedSoundId) {
+	                this.cachedSoundId = this.props.sound.id;
+	                this.setState({ liked: false, followed: false });
+	            }
 	            return _react2.default.createElement(
 	                'ul',
 	                { className: 'soundcloud-controls pull-right' },
