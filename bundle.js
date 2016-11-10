@@ -24134,12 +24134,15 @@
 	            });
 	        }
 	    }, {
-	        key: 'render',
-	        value: function render() {
-	            if (this.props.sound.id != this.cachedSoundId) {
-	                this.cachedSoundId = this.props.sound.id;
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps(nextProps) {
+	            if (this.props.sound.id != nextProps.sound.id) {
 	                this.setState({ liked: false, followed: false });
 	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
 	            return _react2.default.createElement(
 	                'ul',
 	                { className: 'soundcloud-controls pull-right' },
@@ -34728,6 +34731,7 @@
 	            title: 'Page not found',
 	            series: []
 	        };
+	        _this.parseServerFile();
 	        return _this;
 	    }
 
@@ -34756,13 +34760,23 @@
 	            });
 	        }
 	    }, {
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            if (this.props.path !== this.curPath) {
+	                this.curPath = this.props.path;
+
+	                this.setState({
+	                    content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
+	                    title: 'Page not found',
+	                    series: []
+	                });
+	                this.parseServerFile();
+	            }
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var child = void 0;
-	            if (this.props.path !== this.curPath) {
-	                this.curPath = this.props.path;
-	                this.parseServerFile();
-	            }
 	            switch (this.props.path) {
 	                case '/favorites':
 	                    child = _react2.default.createElement(_FavoritesCollection2.default, null);
