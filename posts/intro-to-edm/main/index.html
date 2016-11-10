@@ -6,10 +6,10 @@
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/lib/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <link href='css/global.css' rel='stylesheet'>
-    <script type="application/javascript" data-main="js/main" src="js/lib/require.js"></script>
 </head>
 
 <body>
+	<div id="app">
 	<nav class="rr-navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <a class="brand push-state" href="/">rickyrombo</a>
@@ -48,14 +48,14 @@
 				<div class="row">
 					<div class="col col-md-6">
 						<div class="page-title">
-							<h1>An Introduction to Electronic Dance Music </h1>
+							<h1><span id="title">An Introduction to Electronic Dance Music</span> <span id="singular"></span></h1>
 						</div>
 					</div>
 					<div class="col col-md-6">
 						<div class="page-tagline">
-							<p>An explanation of major subgenres with examples
+							<p><span id="description">An explanation of major subgenres with examples</span>
 								
-								<br /> <a href="http://rickyrombo.com/series/intro-to-edm">Intro to EDM</a></p>
+								<br /> <a class="series-link" href="series/intro-to-edm">Intro to EDM</a></p>
 								
 						</div>
 					</div>
@@ -68,7 +68,7 @@
     </div>
     <div class="post-nav-next">
         
-            <a class="next" href="/about/"> about me &gt;&gt;</a>
+            <a class="next" href="#/about/"> about me &gt;&gt;</a>
         
     </div>
 </div>
@@ -78,7 +78,7 @@
 
 <p>Or maybe you&rsquo;re on the opposite side of the spectrum. Perhaps everything <em>does</em> sound the same. One friend says &ldquo;I like dubstep,&rdquo; and your other friend says &ldquo;I like tropical house.&rdquo; And you&rsquo;re stuck thinking, &ldquo;What&rsquo;s the difference?&rdquo;</p>
 
-<p>Or maybe you&rsquo;re somewhere in the middle, and you know and appreciate the different subgenres of EDM. Maybe you&rsquo;re here because you want to <a href="https://www.youtube.com/watch?v=5l-PjIqPOBw">go one deeper</a> on each subgenre and really understand the what makes them unique. Or maybe you just want to hear what I think are the different genres and criticize my examples. Got a better example? Reach out to me.</p>
+<p>Or maybe you&rsquo;re somewhere in the middle, and you know and appreciate the different subgenres of EDM. Maybe you&rsquo;re here because you want to <a href="https://www.youtube.com/watch?v=5l-PjIqPOBw" target="_blank">go one deeper</a> on each subgenre and really understand the what makes them unique. Or maybe you just want to hear what I think are the different genres and criticize my examples. Got a better example? Reach out to me.</p>
 
 <p>In any case, you&rsquo;re here. Welcome to the series. I&rsquo;ll walk you through an analysis of a few major genres as of 2016, and include some favorite examples of mine throughout.</p>
 
@@ -92,7 +92,7 @@
 
 <h1 id="do-all-edm-songs-have-a-drop">Do all EDM songs have a drop?</h1>
 
-<p>Not exactly, no. But technically the concept is still there even if a song doesn&rsquo;t have a &ldquo;drop&rdquo;-like chorus or even if a song isn&rsquo;t EDM. A song may not have a drop if its build (if any) isn&rsquo;t substantially different from its chorus phrase in terms of energy. For instance, it would be weird to say that tropical house has a &ldquo;drop&rdquo; because the change of energy isn&rsquo;t quite as drastic as other genres, although theoretically you could. A &ldquo;drop&rdquo; is a moment of hype - if you wouldn&rsquo;t find yourself waiting in anticipation to jump up and down on the dance floor you&rsquo;re pretty safe not calling it a &ldquo;drop.&rdquo; However, if someone else calls it a drop, don&rsquo;t be that guy that tries to correct them. <a href="http://theoatmeal.com/comics/irony">It&rsquo;s actually a lot like irony</a>. It&rsquo;s not something worth debating - you will know what part of the song is the &ldquo;drop&rdquo; even if it&rsquo;s weird or feels wrong to call it that.</p>
+<p>Not exactly, no. But technically the concept is still there even if a song doesn&rsquo;t have a &ldquo;drop&rdquo;-like chorus or even if a song isn&rsquo;t EDM. A song may not have a drop if its build (if any) isn&rsquo;t substantially different from its chorus phrase in terms of energy. For instance, it would be weird to say that tropical house has a &ldquo;drop&rdquo; because the change of energy isn&rsquo;t quite as drastic as other genres, although theoretically you could. A &ldquo;drop&rdquo; is a moment of hype - if you wouldn&rsquo;t find yourself waiting in anticipation to jump up and down on the dance floor you&rsquo;re pretty safe not calling it a &ldquo;drop.&rdquo; However, if someone else calls it a drop, don&rsquo;t be that guy that tries to correct them. <a href="http://theoatmeal.com/comics/irony" target="_blank">It&rsquo;s actually a lot like irony</a>. It&rsquo;s not something worth debating - you will know what part of the song is the &ldquo;drop&rdquo; even if it&rsquo;s weird or feels wrong to call it that.</p>
 
 <h1 id="let-s-get-started">Let&rsquo;s get started</h1>
 
@@ -104,7 +104,7 @@
     </div>
     <div class="post-nav-next">
         
-            <a class="next" href="/about/"> about me &gt;&gt;</a>
+            <a class="next" href="#/about/"> about me &gt;&gt;</a>
         
     </div>
 </div>
@@ -116,38 +116,6 @@
     </footer>
     </div>
 </div>
-<div id="player" class="player">
-    <div class="container-fluid">
-        <ul class="player-controls">
-            <li><a class="prev-btn" target="_blank"><span class="control glyphicon glyphicon-fast-backward"></span></a></li>
-            <li class="play-btn"><a target="_blank"><span class="glyphicon glyphicon-play"></span></a></li>
-            <li class="pause-btn" style="display: none"><a target="_blank"><span class="glyphicon glyphicon-pause"></span></a></li>
-            <li><a class="next-btn" target="_blank"><span class="control glyphicon glyphicon-fast-forward"></span></a></li>
-        </ul>
-        <ul class="now-playing">
-            <li class="current-sound">
-                <a class="now-playing-title" target="_blank">Loading...</a>
-                <a class="read-post" title="Read my article about this sound" target="_blank"><span class="fa fa-newspaper-o"></span></a>
-                <a class="now-playing-from"></a>
-            </li>
-            <li class="time"><a class="sound-position" target="_blank">00:00</a></li>
-            <li class="timeline">
-                <div class="line-container">
-                    <div class="loadhead"></div>
-                    <div class="playhead"></div>
-                    <div class="line"></div>
-                </div>
-            </li>
-            <li class="time pull-right"><a class="sound-duration" target="_blank">00:00</a></li>
-        </ul>
-        <ul class="soundcloud-controls pull-right">
-            <li><a class="like-sound" title="Like this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-heart"></span></a></li>
-            <li><a class="follow-user" title="Follow this user on Soundcloud" target="_blank"><span class="fa fa-user-plus"></span></a></li>
-            <li style="display: none"><a class="download-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></li>
-            <li><a class="buy-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a class="view-sound" title="View this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-share"></span></a></li>
-        </ul>
-    </div>
 </div>
-
+<script type="application/javascript" src="bundle.js"></script>
 </body>

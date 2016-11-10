@@ -6,10 +6,10 @@
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/lib/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <link href='css/global.css' rel='stylesheet'>
-    <script type="application/javascript" data-main="js/main" src="js/lib/require.js"></script>
 </head>
 
 <body>
+	<div id="app">
 	<nav class="rr-navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <a class="brand push-state" href="/">rickyrombo</a>
@@ -48,12 +48,12 @@
 				<div class="row">
 					<div class="col col-md-6">
 						<div class="page-title">
-							<h1>Posts </h1>
+							<h1><span id="title">Posts</span> <span id="singular"></span></h1>
 						</div>
 					</div>
 					<div class="col col-md-6">
 						<div class="page-tagline">
-							<p>
+							<p><span id="description"></span>
 								
 								
 						</div>
@@ -65,14 +65,14 @@
 	<ul>
 		
 		<li class="post-li">
-	<h3><a title="An Introduction to Electronic Dance Music" href="/posts/intro-to-edm/main/">An Introduction to Electronic Dance Music</a></h3>
-	<p>So you&rsquo;ve heard your friends talking about EDM, or electronic dance music. Maybe they were going to a music festival like Coachella or Ultra. Maybe they DJ or produce some music. But your friends have shown you different music, and you&rsquo;re confused. What is EDM? Those songs don&rsquo;t sound the same. Or maybe you&rsquo;re on the opposite side of the spectrum. Perhaps everything does sound the same. One friend says &ldquo;I like dubstep,&rdquo; and your other friend says &ldquo;I like tropical house.&rdquo; And you&rsquo;re stuck thinking, &ldquo;What&rsquo;s the difference?&rdquo; Or maybe you&rsquo;re somewhere in the middle, and you know and appreciate the different subgenres of EDM. <a title="An Introduction to Electronic Dance Music" href="/posts/intro-to-edm/main/">... Read More</a></p>
+	<h3><a title="An Introduction to Electronic Dance Music" href="#/posts/intro-to-edm/main/">An Introduction to Electronic Dance Music</a></h3>
+	<p>So you&rsquo;ve heard your friends talking about EDM, or electronic dance music. Maybe they were going to a music festival like Coachella or Ultra. Maybe they DJ or produce some music. But your friends have shown you different music, and you&rsquo;re confused. What is EDM? Those songs don&rsquo;t sound the same. Or maybe you&rsquo;re on the opposite side of the spectrum. Perhaps everything does sound the same. One friend says &ldquo;I like dubstep,&rdquo; and your other friend says &ldquo;I like tropical house.&rdquo; And you&rsquo;re stuck thinking, &ldquo;What&rsquo;s the difference?&rdquo; Or maybe you&rsquo;re somewhere in the middle, and you know and appreciate the different subgenres of EDM. <a title="An Introduction to Electronic Dance Music" href="#/posts/intro-to-edm/main/">... Read More</a></p>
 </li>
 		
 		<li class="post-li">
-	<h3><a title="A New Home" href="/posts/new-website/">A New Home</a></h3>
-	<p><p>I&rsquo;m currently in the process of moving my website from PHP/MySQL with <a href="http://laravel.com">Laravel</a> to a static site using <a href="http://gohugo.io">Hugo</a>. Pretty soon, <a href="http://rickyrombo.com">rickyrombo.com</a> will point to this GitHub page instead of going to some folder on <a href="http://awestruckdesign.com">AwestruckDesign</a> or website on <a href="http://heroku.com">Heroku</a>.</p>
- <a title="A New Home" href="/posts/new-website/">... Read More</a></p>
+	<h3><a title="A New Home" href="#/posts/new-website/">A New Home</a></h3>
+	<p><p>I&rsquo;m currently in the process of moving my website from PHP/MySQL with <a href="http://laravel.com" target="_blank">Laravel</a> to a static site using <a href="http://gohugo.io" target="_blank">Hugo</a>. Pretty soon, <a href="http://rickyrombo.com" target="_blank">rickyrombo.com</a> will point to this GitHub page instead of going to some folder on <a href="http://awestruckdesign.com" target="_blank">AwestruckDesign</a> or website on <a href="http://heroku.com" target="_blank">Heroku</a>.</p>
+ <a title="A New Home" href="#/posts/new-website/">... Read More</a></p>
 </li>
 		
 	</ul>
@@ -85,38 +85,6 @@
     </footer>
     </div>
 </div>
-<div id="player" class="player">
-    <div class="container-fluid">
-        <ul class="player-controls">
-            <li><a class="prev-btn" target="_blank"><span class="control glyphicon glyphicon-fast-backward"></span></a></li>
-            <li class="play-btn"><a target="_blank"><span class="glyphicon glyphicon-play"></span></a></li>
-            <li class="pause-btn" style="display: none"><a target="_blank"><span class="glyphicon glyphicon-pause"></span></a></li>
-            <li><a class="next-btn" target="_blank"><span class="control glyphicon glyphicon-fast-forward"></span></a></li>
-        </ul>
-        <ul class="now-playing">
-            <li class="current-sound">
-                <a class="now-playing-title" target="_blank">Loading...</a>
-                <a class="read-post" title="Read my article about this sound" target="_blank"><span class="fa fa-newspaper-o"></span></a>
-                <a class="now-playing-from"></a>
-            </li>
-            <li class="time"><a class="sound-position" target="_blank">00:00</a></li>
-            <li class="timeline">
-                <div class="line-container">
-                    <div class="loadhead"></div>
-                    <div class="playhead"></div>
-                    <div class="line"></div>
-                </div>
-            </li>
-            <li class="time pull-right"><a class="sound-duration" target="_blank">00:00</a></li>
-        </ul>
-        <ul class="soundcloud-controls pull-right">
-            <li><a class="like-sound" title="Like this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-heart"></span></a></li>
-            <li><a class="follow-user" title="Follow this user on Soundcloud" target="_blank"><span class="fa fa-user-plus"></span></a></li>
-            <li style="display: none"><a class="download-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></li>
-            <li><a class="buy-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a class="view-sound" title="View this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-share"></span></a></li>
-        </ul>
-    </div>
 </div>
-
+<script type="application/javascript" src="bundle.js"></script>
 </body>

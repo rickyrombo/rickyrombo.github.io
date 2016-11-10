@@ -6,10 +6,10 @@
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/lib/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <link href='css/global.css' rel='stylesheet'>
-    <script type="application/javascript" data-main="js/main" src="js/lib/require.js"></script>
 </head>
 
 <body>
+	<div id="app">
 	<nav class="rr-navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <a class="brand push-state" href="/">rickyrombo</a>
@@ -48,12 +48,12 @@
 				<div class="row">
 					<div class="col col-md-6">
 						<div class="page-title">
-							<h1>followings </h1>
+							<h1><span id="title">followings</span> <span id="singular"></span></h1>
 						</div>
 					</div>
 					<div class="col col-md-6">
 						<div class="page-tagline">
-							<p>People worth a listen.
+							<p><span id="description">People worth a listen.</span>
 								
 								
 						</div>
@@ -73,38 +73,6 @@
     </footer>
     </div>
 </div>
-<div id="player" class="player">
-    <div class="container-fluid">
-        <ul class="player-controls">
-            <li><a class="prev-btn" target="_blank"><span class="control glyphicon glyphicon-fast-backward"></span></a></li>
-            <li class="play-btn"><a target="_blank"><span class="glyphicon glyphicon-play"></span></a></li>
-            <li class="pause-btn" style="display: none"><a target="_blank"><span class="glyphicon glyphicon-pause"></span></a></li>
-            <li><a class="next-btn" target="_blank"><span class="control glyphicon glyphicon-fast-forward"></span></a></li>
-        </ul>
-        <ul class="now-playing">
-            <li class="current-sound">
-                <a class="now-playing-title" target="_blank">Loading...</a>
-                <a class="read-post" title="Read my article about this sound" target="_blank"><span class="fa fa-newspaper-o"></span></a>
-                <a class="now-playing-from"></a>
-            </li>
-            <li class="time"><a class="sound-position" target="_blank">00:00</a></li>
-            <li class="timeline">
-                <div class="line-container">
-                    <div class="loadhead"></div>
-                    <div class="playhead"></div>
-                    <div class="line"></div>
-                </div>
-            </li>
-            <li class="time pull-right"><a class="sound-duration" target="_blank">00:00</a></li>
-        </ul>
-        <ul class="soundcloud-controls pull-right">
-            <li><a class="like-sound" title="Like this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-heart"></span></a></li>
-            <li><a class="follow-user" title="Follow this user on Soundcloud" target="_blank"><span class="fa fa-user-plus"></span></a></li>
-            <li style="display: none"><a class="download-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></li>
-            <li><a class="buy-sound" title="Get this sound" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a class="view-sound" title="View this sound on Soundcloud" target="_blank"><span class="glyphicon glyphicon-share"></span></a></li>
-        </ul>
-    </div>
 </div>
-
+<script type="application/javascript" src="bundle.js"></script>
 </body>
