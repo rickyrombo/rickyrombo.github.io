@@ -24109,9 +24109,9 @@
 	            var _this2 = this;
 
 	            _soundcloudInit2.default.connect().then(function () {
-	                return _soundcloudInit2.default.put('/me/likes/' + _this2.props.sound.id);
+	                return _soundcloudInit2.default.put('/me/favorites/' + _this2.props.sound.id);
 	            }).then(function (sound) {
-	                alert('You now like ' + sound.title);
+	                setState({ liked: true });
 	            }).catch(function (error) {
 	                alert('Error: ' + error.message);
 	            });
@@ -24124,7 +24124,7 @@
 	            _soundcloudInit2.default.connect().then(function () {
 	                return _soundcloudInit2.default.put('/me/followings/' + _this3.props.sound.user.id);
 	            }).then(function (user) {
-	                alert('You are now following ' + user.username);
+	                setState({ followed: true });
 	            }).catch(function (error) {
 	                alert('Error: ' + error.message);
 	            });
@@ -24140,7 +24140,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { onClick: this.onLikeClicked, title: 'Like this sound on Soundcloud', target: '_blank' },
+	                        { onClick: this.onLikeClicked, className: this.state.liked ? 'on' : '', title: 'Like this sound on Soundcloud', target: '_blank' },
 	                        _react2.default.createElement('span', { className: 'glyphicon glyphicon-heart' })
 	                    )
 	                ),
@@ -24149,7 +24149,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { onClick: this.onFollowClicked, title: 'Follow this user on Soundcloud', target: '_blank' },
+	                        { onClick: this.onFollowClicked, className: this.state.followed ? 'on' : '', title: 'Follow this user on Soundcloud', target: '_blank' },
 	                        _react2.default.createElement('span', { className: 'fa fa-user-plus' })
 	                    )
 	                ),
