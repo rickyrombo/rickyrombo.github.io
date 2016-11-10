@@ -34966,7 +34966,9 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Copyright \xA92015 Marcus Pasell - All Rights Reserved'
+	                    'Copyright \xA9 ',
+	                    new Date().getFullYear(),
+	                    ' Marcus Pasell - All Rights Reserved'
 	                )
 	            );
 	        }
