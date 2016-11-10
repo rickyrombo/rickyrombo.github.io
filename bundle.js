@@ -24098,6 +24098,10 @@
 
 	        var _this = _possibleConstructorReturn(this, (PlayerSocialButtons.__proto__ || Object.getPrototypeOf(PlayerSocialButtons)).call(this, props));
 
+	        _this.state = {
+	            liked: false,
+	            followed: false
+	        };
 	        _this.onLikeClicked = _this.onLikeClicked.bind(_this);
 	        _this.onFollowClicked = _this.onFollowClicked.bind(_this);
 	        return _this;
