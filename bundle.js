@@ -24115,9 +24115,9 @@
 	            _soundcloudInit2.default.connect().then(function () {
 	                return _soundcloudInit2.default.put('/me/favorites/' + _this2.props.sound.id);
 	            }).then(function (sound) {
-	                setState({ liked: true });
+	                _this2.setState({ liked: true });
 	            }).catch(function (error) {
-	                alert('Error: ' + error.message);
+	                console.error('Error: ' + error.message);
 	            });
 	        }
 	    }, {
@@ -24128,9 +24128,9 @@
 	            _soundcloudInit2.default.connect().then(function () {
 	                return _soundcloudInit2.default.put('/me/followings/' + _this3.props.sound.user.id);
 	            }).then(function (user) {
-	                setState({ followed: true });
+	                _this3.setState({ followed: true });
 	            }).catch(function (error) {
-	                alert('Error: ' + error.message);
+	                console.error('Error: ' + error.message);
 	            });
 	        }
 	    }, {
