@@ -63,6 +63,14 @@
 	if (!window.location.hash && window.location.pathname) {
 	    window.location = '/#' + window.location.pathname;
 	}
+
+	window.addEventListener('sound-played', function (e) {
+	    document.getElementById('play-overlay-sound-' + e.detail).className = 'fa fa-pause';
+	});
+	window.addEventListener('sound-paused', function (e) {
+	    document.getElementById('play-overlay-sound-' + e.detail).className = 'fa fa-play';
+	});
+
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ },
@@ -31484,10 +31492,15 @@
 	var Sound = function (_React$Component) {
 	    _inherits(Sound, _React$Component);
 
-	    function Sound() {
+	    function Sound(props) {
 	        _classCallCheck(this, Sound);
 
-	        return _possibleConstructorReturn(this, (Sound.__proto__ || Object.getPrototypeOf(Sound)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (Sound.__proto__ || Object.getPrototypeOf(Sound)).call(this, props));
+
+	        _this.state = {
+	            isPlaying: false
+	        };
+	        return _this;
 	    }
 
 	    _createClass(Sound, [{
@@ -31506,6 +31519,20 @@
 	            this.art.addEventListener('error', function (e) {
 	                _this2.art.src = _this2.props.sound.user.avatar_url;
 	            }, false);
+	            window.addEventListener('sound-played', function (e) {
+	                var soundId = e.detail;
+	                if (soundId == _this2.props.sound.id) {
+	                    _this2.setState({ isPlaying: true });
+	                } else if (_this2.state.isPlaying) {
+	                    _this2.setState({ isPlaying: false });
+	                }
+	            });
+	            window.addEventListener('sound-paused', function (e) {
+	                var soundId = e.detail;
+	                if (soundId == _this2.props.sound.id) {
+	                    _this2.setState({ isPlaying: false });
+	                }
+	            });
 	        }
 	    }, {
 	        key: 'render',
@@ -31520,6 +31547,11 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'full-art' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'play-hover-overlay' },
+	                        _react2.default.createElement('span', { className: 'fa ' + (this.state.isPlaying ? 'fa-pause' : 'fa-play') })
+	                    ),
 	                    _react2.default.createElement(
 	                        'h3',
 	                        null,
@@ -31660,7 +31692,7 @@
 	            sound: {
 	                user: {}
 	            },
-	            player: {}
+	            player: false
 	        };
 
 	        // Load initial track
@@ -31670,8 +31702,12 @@
 	        // })
 
 	        window.addEventListener('sound-clicked', function (e) {
-	            _this.playById(e.detail);
-	            _this.parsePlaylist();
+	            if (_this.state.sound.id == e.detail && _this.state.player) {
+	                _this.playToggle();
+	            } else {
+	                _this.playById(e.detail);
+	                _this.parsePlaylist();
+	            }
 	        });
 
 	        // Bind self to event handlers
@@ -31765,8 +31801,10 @@
 	                player.on('state-change', function (e) {
 	                    if (e == 'playing') {
 	                        _this3.setState({ isPlaying: true });
+	                        window.dispatchEvent(new CustomEvent('sound-played', { detail: id }));
 	                    } else if (e == 'paused') {
 	                        _this3.setState({ isPlaying: false });
+	                        window.dispatchEvent(new CustomEvent('sound-paused', { detail: id }));
 	                    }
 	                });
 	                player.on('finish', function () {
