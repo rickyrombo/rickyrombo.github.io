@@ -20790,6 +20790,7 @@
 	                (0, _jquery2.default)(headerContent).find('.series-link').each(function () {
 	                    series.push({ name: (0, _jquery2.default)(this).html(), url: (0, _jquery2.default)(this).attr('href') });
 	                });
+	                document.title = title + ' | rickyrombo';
 	                _this2.setState({
 	                    content: content,
 	                    title: title,
@@ -20798,6 +20799,11 @@
 	                });
 	            }).fail(function (e) {
 	                console.error(e);
+	                _this2.setState({
+	                    content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
+	                    title: 'Page not found',
+	                    series: []
+	                });
 	            });
 	        }
 	    }, {
@@ -20805,12 +20811,6 @@
 	        value: function componentDidUpdate() {
 	            if (this.props.path !== this.curPath) {
 	                this.curPath = this.props.path;
-
-	                this.setState({
-	                    content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
-	                    title: 'Page not found',
-	                    series: []
-	                });
 	                this.parseServerFile();
 	            }
 	        }
