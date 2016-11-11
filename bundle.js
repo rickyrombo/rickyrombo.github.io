@@ -65,10 +65,16 @@
 	}
 
 	window.addEventListener('sound-played', function (e) {
-	    document.getElementById('play-overlay-sound-' + e.detail).className = 'fa fa-pause';
+	    var el = document.getElementById('play-overlay-sound-' + e.detail);
+	    if (el) {
+	        el.className = 'fa fa-pause';
+	    }
 	});
 	window.addEventListener('sound-paused', function (e) {
-	    document.getElementById('play-overlay-sound-' + e.detail).className = 'fa fa-play';
+	    var el = document.getElementById('play-overlay-sound-' + e.detail);
+	    if (el) {
+	        el.className = 'fa fa-play';
+	    }
 	});
 
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
@@ -20768,8 +20774,8 @@
 	        var _this = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
 
 	        _this.state = {
-	            content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
-	            title: 'Page not found',
+	            content: '<p>Please wait...</p>',
+	            title: 'Loading...',
 	            series: []
 	        };
 	        _this.parseServerFile();
@@ -20791,6 +20797,7 @@
 	                    series.push({ name: (0, _jquery2.default)(this).html(), url: (0, _jquery2.default)(this).attr('href') });
 	                });
 	                document.title = title + ' | rickyrombo';
+	                window.scroll(0, 0);
 	                _this2.setState({
 	                    content: content,
 	                    title: title,
