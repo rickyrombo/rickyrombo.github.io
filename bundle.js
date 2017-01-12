@@ -20793,9 +20793,9 @@
 	                    content: content,
 	                    headerContent: headerContent
 	                });
-	            }).fail(function (e, contents, c, d) {
+	            }).fail(function (e) {
 	                console.error(e);
-	                console.log(contents, c, d);
+	                var contents = e.responseText;
 
 	                var content = (0, _jquery2.default)(contents).find('#main').html();
 	                var headerContent = (0, _jquery2.default)(contents).find('header').html();
