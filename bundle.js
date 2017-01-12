@@ -20733,10 +20733,6 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _Header = __webpack_require__(166);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
 	var _MainContent = __webpack_require__(167);
 
 	var _MainContent2 = _interopRequireDefault(_MainContent);
@@ -20791,25 +20787,24 @@
 	                var content = (0, _jquery2.default)(contents).find('#main').html();
 	                var headerContent = (0, _jquery2.default)(contents).find('header').html();
 	                var title = (0, _jquery2.default)(headerContent).find('#title').html();
-	                var description = (0, _jquery2.default)(headerContent).find('#description').html();
-	                var series = [];
-	                (0, _jquery2.default)(headerContent).find('.series-link').each(function () {
-	                    series.push({ name: (0, _jquery2.default)(this).html(), url: (0, _jquery2.default)(this).attr('href') });
-	                });
 	                document.title = title + ' | rickyrombo';
 	                window.scroll(0, 0);
 	                _this2.setState({
 	                    content: content,
-	                    title: title,
-	                    description: description,
-	                    series: series
+	                    headerContent: headerContent
 	                });
-	            }).fail(function (e) {
+	            }).fail(function (e, contents, c, d) {
 	                console.error(e);
+	                console.log(contents, c, d);
+
+	                var content = (0, _jquery2.default)(contents).find('#main').html();
+	                var headerContent = (0, _jquery2.default)(contents).find('header').html();
+	                var title = (0, _jquery2.default)(headerContent).find('#title').html();
+	                document.title = title + ' | rickyrombo';
+	                window.scroll(0, 0);
 	                _this2.setState({
-	                    content: '<p>Whoops. Looks like this moved or doesn\'t exist anymore!</p>',
-	                    title: 'Page not found',
-	                    series: []
+	                    content: content,
+	                    headerContent: headerContent
 	                });
 	            });
 	        }
@@ -20836,11 +20831,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'content' },
-	                _react2.default.createElement(_Header2.default, { title: this.state.title,
-	                    series: this.state.series,
-	                    description: this.state.description,
-	                    singular: this.state.singular
-	                }),
+	                _react2.default.createElement('header', { className: 'header', dangerouslySetInnerHTML: { __html: this.state.headerContent } }),
 	                _react2.default.createElement(
 	                    _MainContent2.default,
 	                    { content: this.state.content },
@@ -20857,98 +20848,7 @@
 	exports.default = Article;
 
 /***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(30);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Header = function (_React$Component) {
-		_inherits(Header, _React$Component);
-
-		function Header() {
-			_classCallCheck(this, Header);
-
-			return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-		}
-
-		_createClass(Header, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'header',
-					{ className: 'header' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col col-md-6' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'page-title' },
-								_react2.default.createElement(
-									'h1',
-									null,
-									this.props.title,
-									' ',
-									this.props.singular
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col col-md-6' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'page-tagline' },
-								_react2.default.createElement(
-									'p',
-									null,
-									_react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: this.props.description } }),
-									this.props.series.map(function (series) {
-										return _react2.default.createElement(
-											'a',
-											{ key: series.url, href: series.url },
-											_react2.default.createElement('br', null),
-											series.name
-										);
-									})
-								)
-							)
-						)
-					)
-				);
-			}
-		}]);
-
-		return Header;
-	}(_react2.default.Component);
-
-	exports.default = Header;
-
-/***/ },
+/* 166 */,
 /* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
