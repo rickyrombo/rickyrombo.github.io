@@ -20796,7 +20796,7 @@
 	            }).fail(function (e) {
 	                console.error(e);
 	                var contents = e.responseText;
-
+	                console.log(contents);
 	                var content = (0, _jquery2.default)(contents).find('#main').html();
 	                var headerContent = (0, _jquery2.default)(contents).find('header').html();
 	                var title = (0, _jquery2.default)(headerContent).find('#title').html();
