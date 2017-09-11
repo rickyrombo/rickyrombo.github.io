@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <title>site rebuilt from the ground up | rickyrombo</title>
+	<base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/lib/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='css/global.css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id="app">
+	<nav class="rr-navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <a class="brand push-state" href="/">rickyrombo</a>
+        <button type="button" class="navbar-toggle collapsed" data-target=".rr-collapseable" class="rr-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <ul class="rr-nav rr-nav-main rr-collapseable no-redirect">
+            <li><a class="push-state" href="music">music</a></li>
+            <li><a class="push-state" href="/series/intro-to-edm">intro to edm</a></li>
+            <li><a class="push-state" href="favorites">favorites</a></li>
+            <li><a class="push-state" href="followings">followings</a></li>
+            <li><a class="push-state" href="about">about</a></li>
+        </ul>
+
+        <ul class="rr-nav rr-nav-social rr-collapseable">
+            <li>
+                <a target="_blank" href="http://soundcloud.com/rickyrombo" title="RickyRombo on Soundcloud">
+                    <i class="fa fa-soundcloud"></i><span class="social-text visible-xs-inline">soundcloud</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://facebook.com/therickyrombo" title="RickyRombo on Facebook">
+                    <i class="fa fa-facebook"></i><span class="social-text visible-xs-inline">facebook</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+	<div id="wrapper">
+		<div id="content" class="content">
+			<header class="header">
+				<div class="row">
+					<div class="col col-md-9">
+						<div class="page-title">
+							<h1><span id="singular"> </span> <span id="title" data-id="0690f93a6a13b430e343b9800cb5a72c" data-type="posts">site rebuilt from the ground up</span></h1>
+							<p><span id="description">react js is pretty neat&hellip;</span></p>
+							
+<ul class="tags">
+    <li class="tag">Tags:</li>
+    
+    <li class="tag"><a href="#/tags/meta-website">meta-website</a></li>
+    
+</ul>
+
+						</div>
+					</div>
+					<div class="col col-md-3">
+						<div class="page-tagline">
+							<p>
+								<span id="date">November 13, 2016
+								</span>
+								
+								
+						</div>
+					</div>
+				</div>
+			</header>
+			<div id="main">
+<div class="post-nav">
+    <div class="post-nav-prev">
+        
+            <a class="previous" href="#/posts/new-website/">&lt;&lt; A New Home</a>
+        
+    </div>
+    <div class="post-nav-next">
+        
+            <a class="next" href="#/posts/intro-to-edm/main/"> An Introduction to Electronic Dance Music &gt;&gt;</a>
+        
+    </div>
+</div>
+<p>As I was starting <a href="#/series/intro-to-edm">my new series</a>, I noticed a few things on my website weren&rsquo;t working. I also noticed that my SoundCloud API was old which was likely part of the problem. In the process of fixing things, I decided this would be a good opportunity for me to learn ReactJS and just rebuild my website as a React website.</p>
+
+<p>So I did, and it took me a good chunk of a week.</p>
+
+<p>I have rebuilt the entire site frontend to operate by using ReactJS. I also added a proper Node backend so I can use things like Webpack and Babel and write my JavaScript in ES2015 and use JSX. I ran into a few problems while doing this.</p>
+
+<p>Most notably, I still use a static website generator, <a href="http://gohugo.io" target="_blank">Hugo</a>, which makes less sense with ReactJS. I might move away from it in the future and roll my own site generator (or use an existing React one) that works better with React.</p>
+
+<p>Second, I had to do a couple of hacks to get a few components to talk to each other, and get things that weren&rsquo;t components to talk to components (like sounds linked in posts made in Hugo). It makes more sense for the player to handle all of its own state, rather than bubbling that up to the root React element - even if it meant I now had to communicate with the player through global events to get sounds from the post you clicked on to load in the player. I might go back and fix it to make it more friendly if I ever move away from Hugo, as then I could just have components for every sound instead of having to bind to rendered sounds embedded in posts.</p>
+
+<p>Third, I had difficulty using <code>react-router</code>. I realized it was slightly overkill and wasn&rsquo;t really necessary, and that I have a much better understanding and control of what&rsquo;s going on with rolling my own navigation. It&rsquo;s just <code>hashchange</code> events, anyway.</p>
+
+<p>All in all it was a good learning experience. I think I&rsquo;ve really started to learn how to think in React. There&rsquo;s still a lot to do (and new bugs got introduced in the switch), but overall things are looking pretty decent.</p>
+
+<p>P.S.: I took away the followings page, as I figured by now it&rsquo;s so full of &ldquo;follow to download&rdquo; people. Instead, I&rsquo;ve been planning on doing an artist spotlight every once in a while.</p>
+
+
+
+
+<ul class="tags">
+    <li class="tag">Tags:</li>
+    
+    <li class="tag"><a href="#/tags/meta-website">meta-website</a></li>
+    
+</ul>
+
+<div class="post-nav">
+    <div class="post-nav-prev">
+        
+            <a class="previous" href="#/posts/new-website/">&lt;&lt; A New Home</a>
+        
+    </div>
+    <div class="post-nav-next">
+        
+            <a class="next" href="#/posts/intro-to-edm/main/"> An Introduction to Electronic Dance Music &gt;&gt;</a>
+        
+    </div>
+</div>
+        </div>
+	    	<footer id="footer" class="footer">
+        <p>All cover art and music is provided using <a target="_blank" title="Soundcloud.com" href="http://soundcloud.com">Soundcloud</a>
+            Background cover art are those of <a target="_blank" title="View on Soundcloud" href="http://soundcloud.com/rickyrombo/favorites">RickyRombo's favorites</a></p>
+        <p>Copyright &copy;2015 Marcus Pasell - All Rights Reserved</p>
+    </footer>
+    </div>
+</div>
+</div>
+<script type="application/javascript" src="bundle.js"></script>
+</body>
