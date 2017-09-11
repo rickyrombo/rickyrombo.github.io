@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://rickyrombo.com/</loc>
-    <lastmod>2017-01-12T22:57:16-06:00</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://rickyrombo.com/posts/intro-to-edm/electro-house/</loc>
@@ -48,6 +44,40 @@
   
   <url>
     <loc>http://rickyrombo.com/callback/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/artists/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/series/intro-to-edm/</loc>
+    <lastmod>2017-01-12T22:57:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/posts/</loc>
+    <lastmod>2017-01-12T22:57:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/series/</loc>
+    <lastmod>2017-01-12T22:57:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/tracks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rickyrombo.com/</loc>
+    <lastmod>2017-01-12T22:57:16-06:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
