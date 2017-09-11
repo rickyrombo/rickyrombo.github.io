@@ -21106,10 +21106,6 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _MainContent = __webpack_require__(173);
-
-	var _MainContent2 = _interopRequireDefault(_MainContent);
-
 	var _Footer = __webpack_require__(175);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
@@ -21198,17 +21194,18 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var child = void 0;
+	            var child = void 0,
+	                disqus = void 0;
 	            switch (this.props.path) {
 	                case '/favorites':
 	                    child = _react2.default.createElement(_FavoritesCollection2.default, null);
 	                    break;
 	                case '/music':
-	                    child = _react2.default.createElement(_SoundCollection2.default, { path: '/users/1369/tracks' });
+	                    child = _react2.default.createElement(_SoundCollection2.default, { path: '/users/15831055/tracks' });
 	                    break;
 	                default:
 	                    if (this.state.type === 'posts') {
-	                        child = _react2.default.createElement(_reactDisqusComments2.default, {
+	                        disqus = _react2.default.createElement(_reactDisqusComments2.default, {
 	                            shortname: 'rickyrombo',
 	                            identifier: this.state.id,
 	                            title: this.state.title,
@@ -21222,9 +21219,14 @@
 	                { className: 'content' },
 	                _react2.default.createElement('header', { className: 'header', dangerouslySetInnerHTML: { __html: this.state.headerContent } }),
 	                _react2.default.createElement(
-	                    _MainContent2.default,
-	                    { content: this.state.content },
-	                    child
+	                    'div',
+	                    null,
+	                    child ? _react2.default.createElement(
+	                        'div',
+	                        { id: 'main' },
+	                        child
+	                    ) : _react2.default.createElement('div', { id: 'main', dangerouslySetInnerHTML: { __html: this.state.content } }),
+	                    disqus
 	                ),
 	                _react2.default.createElement(_Footer2.default, null)
 	            );
@@ -21237,71 +21239,7 @@
 	exports.default = Article;
 
 /***/ }),
-/* 173 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(31);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _jquery = __webpack_require__(174);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var MainContent = function (_React$Component) {
-	    _inherits(MainContent, _React$Component);
-
-	    function MainContent() {
-	        _classCallCheck(this, MainContent);
-
-	        return _possibleConstructorReturn(this, (MainContent.__proto__ || Object.getPrototypeOf(MainContent)).apply(this, arguments));
-	    }
-
-	    _createClass(MainContent, [{
-	        key: 'render',
-	        value: function render() {
-	            if (this.props.content) {
-	                return _react2.default.createElement(
-	                    'div',
-	                    null,
-	                    _react2.default.createElement('div', { id: 'main', dangerouslySetInnerHTML: { __html: this.props.content } }),
-	                    this.props.children
-	                );
-	            }
-	            return _react2.default.createElement(
-	                'div',
-	                { id: 'main' },
-	                this.props.children
-	            );
-	        }
-	    }]);
-
-	    return MainContent;
-	}(_react2.default.Component);
-
-	exports.default = MainContent;
-
-/***/ }),
+/* 173 */,
 /* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31694,10 +31632,11 @@
 	        value: function appendSounds() {
 	            var _this2 = this;
 
-	            _soundcloudInit2.default.get(this.props.path, { offset: this.offset, limit: 48 }).then(function (sounds) {
+	            return _soundcloudInit2.default.get(this.props.path, { offset: this.offset, limit: 48 }).then(function (sounds) {
 	                _this2.offset += 48;
 	                _this2.setState({ sounds: [].concat(_toConsumableArray(_this2.state.sounds), _toConsumableArray(sounds)) });
 	                _this2.loadMore = sounds.length > 0;
+	                return sounds;
 	            }).catch(console.error);
 	        }
 	    }, {
@@ -32626,7 +32565,7 @@
 	            return _soundcloudInit2.default.get('/tracks/' + id).then(function (sound) {
 	                _this2.setState({ sound: sound });
 	                _this2.getStream({ sound: sound, play: true });
-	            });
+	            }).catch(console.error);
 	        }
 	    }, {
 	        key: 'parsePlaylist',
@@ -32650,7 +32589,13 @@
 	    }, {
 	        key: 'playToggle',
 	        value: function playToggle() {
-	            this.state.player.toggle();
+	            if (this.state.player) {
+	                if (this.state.player.isPlaying()) {
+	                    this.state.player.pause();
+	                } else {
+	                    this.state.player.play();
+	                }
+	            }
 	        }
 	    }, {
 	        key: 'seekTrack',
@@ -32685,9 +32630,9 @@
 	            var id = options.sound ? options.sound.id : this.state.sound.id;
 	            _soundcloudInit2.default.stream('/tracks/' + id).then(function (player) {
 	                // Needed to force chrome to http streaming
-	                if (player.options.protocols[0] === 'rtmp') {
-	                    player.options.protocols.splice(0, 1);
-	                }
+	                // if (player.options.protocols[0] === 'rtmp') {
+	                //     player.options.protocols.splice(0, 1)
+	                // }
 	                player.on('time', function () {
 	                    _this3.setState({ position: player.currentTime() });
 	                });
@@ -32710,7 +32655,7 @@
 	                if (options.play) {
 	                    _this3.state.player.play();
 	                }
-	            });
+	            }).catch(console.error);
 	        }
 	    }, {
 	        key: 'render',
@@ -34533,13 +34478,13 @@
 	                        _react2.default.createElement('span', { className: 'fa fa-user-plus' })
 	                    )
 	                ),
-	                _react2.default.createElement(
+	                (this.props.sound.downloadable || this.props.sound.purchase_url) && _react2.default.createElement(
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: this.props.sound.download_url ? this.props.sound.download_url : this.props.sound.purchase_url, title: 'Get this sound', target: '_blank' },
-	                        _react2.default.createElement('span', { className: "glyphicon " + (this.props.sound.download_url ? "glyphicon-circle-arrow-down" : "glyphicon-shopping-cart") })
+	                        { href: this.props.sound.downloadable ? this.props.sound.download_url : this.props.sound.purchase_url, title: 'Get this sound', target: '_blank' },
+	                        _react2.default.createElement('span', { className: "glyphicon " + (this.props.sound.downloadable ? "glyphicon-circle-arrow-down" : "glyphicon-shopping-cart") })
 	                    )
 	                ),
 	                _react2.default.createElement(
